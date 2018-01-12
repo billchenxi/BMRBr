@@ -1,13 +1,20 @@
 #' bmrb_download
 #'
-#' FUNCTION_DESCRIPTION
+#' Main function that download the BMRB file from www.bmrb.wisc.edu repo. It will downoad file in nmr-star3.1 format.
 #'
-#' @param base_url DESCRIPTION.
+#' @param id_list  (Required) A list of file ids that are corresponding to the requested files.
+#' @param output_dir (Required) Location were downloaded file will be saved.
+#' @param base_url Default location is http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/.
+#' @param verbose Boolean parameter. If setted to be "True", the downloader will output detailed results in the console.
 #'
-#' @return RETURN_DESCRIPTION
-#' @examples
-#' # ADD_EXAMPLES_HERE
-bmrb_download <- function(id_list, base_url = "http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/", output_dir = "NMR_STR3", verbose=T) {
+#'
+#' @return Save file in the output_dir location
+#' @export bmrb_download
+
+
+
+
+bmrb_download <- function(id_list, output_dir, base_url = "http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1", verbose=T) {
         prefix <- "bmr"
         extension <- "str"
         if(!dir.exists(file.path(output_dir))) {dir.create(file.path(output_dir))}
@@ -23,7 +30,7 @@ bmrb_download <- function(id_list, base_url = "http://www.bmrb.wisc.edu/ftp/pub/
                 if (verbose) {
                         cat(paste0("Processing: ", prefix, bmrb_id, "\n"))
                 }
-                tryCatch( {download.file(file_url, file_name, quiet = T)},
+                tryCatch( {utils::download.file(file_url, file_name, quiet = T)},
                           error = function(e) {
                                   cat(paste(e, "\n"))
                           }

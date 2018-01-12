@@ -1,21 +1,26 @@
 
 #' collect_ids
 #'
-#' FUNCTION_DESCRIPTION
+#' This function will parse all the files of bmrm nmr-star 3.1 repo and return all the avialable files that are available for downloading.
 #'
 #' @param base_url (optional) The BMRB entry list page for nmr-star3.1, http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/.
-#' @param output whether to output as a list of ids.
+#' @param to_list (optional) whether to output as a list of ids.
 #'
-#' @return RETURN_DESCRIPTION
-#' @examples
-#' # ADD_EXAMPLES_HERE
-collect_ids <- function(base_url="http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/", output = F) {
-        cat("Fetching data ...\n")
+#' @return BMRB_files. This could be a list of ids if output, if 'to_list' is set to be True, otherwise, it will return a html table.
+#' @export collect_ids
+#'
+#'
+
+
+
+
+collect_ids <- function(base_url="http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/", to_list = F) {
+        cat("Parsing data, it might take a while ...\n")
         webpage<- xml2::read_html(base_url)
         table <-rvest::html_nodes(webpage, "table")
         table <- rvest::html_table(table, fill = TRUE)[[1]]
         BMRB_files <- table[-c(1,2), -c(1,5)]
-        if (output) {
+        if (to_list) {
                 return(BMRB_files["Name"])
         }else{
                 return(BMRB_files)
