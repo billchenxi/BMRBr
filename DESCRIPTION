@@ -14,9 +14,7 @@ Depends: R (>= 3.1.0),
         xml2,
         rvest,
         utils
-        
 Imports:
         xml2,
         rvest,
         utils
-        
