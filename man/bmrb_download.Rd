@@ -15,11 +15,11 @@ bmrb_download(id_list, output_dir,
 
 \item{base_url}{Default location is http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/.}
 
-\item{verbose}{Boolean parameter. If setted to be "True", the downloader will output detailed results in the console.}
+\item{verbose}{Boolean parameter. If set to be "True", the downloader will output detailed results in the console.}
 }
 \value{
 Save file in the output_dir location
 }
 \description{
-Main function that download the BMRB file from www.bmrb.wisc.edu repo. It will downoad file in nmr-star3.1 format.
+Main function that download the BMRB file from www.bmrb.wisc.edu repo. It will download file in nmr-star3.1 format.
 }

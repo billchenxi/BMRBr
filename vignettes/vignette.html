@@ -12,7 +12,7 @@
 
 <meta name="author" content="Xi Chen" />
 
-<meta name="date" content="2018-01-12" />
+<meta name="date" content="2018-01-13" />
 
 <title>BMRBr Package</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">BMRBr Package</h1>
 <h4 class="author"><em>Xi Chen</em></h4>
-<h4 class="date"><em>2018-01-12</em></h4>
+<h4 class="date"><em>2018-01-13</em></h4>
 
 
 
@@ -79,43 +79,59 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2>Usage:</h2>
 <div id="load-the-bmrbr-package" class="section level3">
 <h3>1. Load the BMRBr package:</h3>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Remove all the packages</span>
-<span class="kw">rm</span>(<span class="dt">list =</span> <span class="kw">ls</span>(<span class="dt">all =</span> <span class="ot">TRUE</span>))
-
-<span class="kw">library</span>(BMRBr)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(BMRBr)</code></pre></div>
 </div>
 <div id="download-file-from-bmrb-repo" class="section level3">
 <h3>2. Download file from BMRB repo:</h3>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmrb_download</span>(<span class="dv">965</span>, <span class="st">&quot;../download_location&quot;</span>)</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmrb_download</span>(<span class="dv">965</span>, <span class="st">&quot;/Users/download&quot;</span>)</code></pre></div>
+<pre><code>## Warning in dir.create(file.path(output_dir)): cannot create dir '/Users/
+## download', reason 'Permission denied'</code></pre>
 <pre><code>## Downloading...
-## Skipping  bmr 965 , it's already exists.</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmrb_download</span>(<span class="kw">c</span>(<span class="dv">965</span>, <span class="dv">966</span>, <span class="dv">967</span>), <span class="st">&quot;../download_location&quot;</span>)</code></pre></div>
+## Processing:  bmr 965</code></pre>
+<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
+## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr965.str:
+## cannot open destfile '/Users/download/bmr965.str', reason 'No such file or
+## directory'</code></pre>
+<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): download
+## had nonzero exit status</code></pre>
+<pre><code>## Downloaded:  bmr 965</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmrb_download</span>(<span class="kw">c</span>(<span class="dv">965</span>, <span class="dv">966</span>, <span class="dv">967</span>), <span class="st">&quot;/Users/download&quot;</span>)</code></pre></div>
+<pre><code>## Warning in dir.create(file.path(output_dir)): cannot create dir '/Users/
+## download', reason 'Permission denied'</code></pre>
 <pre><code>## Downloading...
-## Skipping  bmr 965 , it's already exists.
-## Skipping  bmr 966 , it's already exists.
-## Skipping  bmr 967 , it's already exists.</code></pre>
+## Processing:  bmr 965</code></pre>
+<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
+## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr965.str:
+## cannot open destfile '/Users/download/bmr965.str', reason 'No such file or
+## directory'</code></pre>
+<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): download
+## had nonzero exit status</code></pre>
+<pre><code>## Downloaded:  bmr 965 
+## Processing:  bmr 966</code></pre>
+<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
+## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr966.str:
+## cannot open destfile '/Users/download/bmr966.str', reason 'No such file or
+## directory'
+
+## Warning in utils::download.file(file_url, file_name, quiet = T): download
+## had nonzero exit status</code></pre>
+<pre><code>## Downloaded:  bmr 966 
+## Processing:  bmr 967</code></pre>
+<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
+## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr967.str:
+## cannot open destfile '/Users/download/bmr967.str', reason 'No such file or
+## directory'
+
+## Warning in utils::download.file(file_url, file_name, quiet = T): download
+## had nonzero exit status</code></pre>
+<pre><code>## Downloaded:  bmr 967</code></pre>
 </div>
 <div id="get-a-listtable-of-files-that-are-aviailable-to-downoad-from-bmrb-repo" class="section level3">
 <h3>3. Get a list/table of files that are aviailable to downoad from BMRB repo:</h3>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">bmrb_list =<span class="st"> </span><span class="kw">collect_ids</span>(<span class="dt">to_list =</span> <span class="ot">TRUE</span>)</code></pre></div>
-<pre><code>## Parsing data, it might take a while ...</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">bmrb_list[<span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>),]</code></pre></div>
-<pre><code>##  [1] &quot;bmr3.str&quot;  &quot;bmr5.str&quot;  &quot;bmr6.str&quot;  &quot;bmr7.str&quot;  &quot;bmr8.str&quot; 
-##  [6] &quot;bmr9.str&quot;  &quot;bmr18.str&quot; &quot;bmr19.str&quot; &quot;bmr21.str&quot; &quot;bmr23.str&quot;</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">bmrb_table =<span class="st"> </span><span class="kw">collect_ids</span>(<span class="dt">to_list =</span> <span class="ot">FALSE</span>)</code></pre></div>
-<pre><code>## Parsing data, it might take a while ...</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">bmrb_table[<span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>),]</code></pre></div>
-<pre><code>##         Name     Last modified Size
-## 3   bmr3.str 02-Nov-2017 17:44  77K
-## 4   bmr5.str 19-Feb-2015 17:25  44K
-## 5   bmr6.str 19-Feb-2015 17:25  35K
-## 6   bmr7.str 02-Nov-2017 17:44  54K
-## 7   bmr8.str 19-Feb-2015 17:25  68K
-## 8   bmr9.str 02-Nov-2017 17:44  53K
-## 9  bmr18.str 02-Nov-2017 17:44  62K
-## 10 bmr19.str 01-Dec-2015 21:40  46K
-## 11 bmr21.str 01-Dec-2015 21:40  37K
-## 12 bmr23.str 01-Dec-2015 21:40  43K</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">bmrb_list =<span class="st"> </span><span class="kw">collect_ids</span>(<span class="dt">to_list =</span> <span class="ot">TRUE</span>)
+bmrb_list[<span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>),]</code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">bmrb_table =<span class="st"> </span><span class="kw">collect_ids</span>(<span class="dt">to_list =</span> <span class="ot">FALSE</span>)
+bmrb_table[<span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>),]</code></pre></div>
 </div>
 </div>
 

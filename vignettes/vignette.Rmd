@@ -4,7 +4,7 @@ author: "Xi Chen"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{BMRBr Package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -14,11 +14,7 @@ BMRB File Downloader is a R package that allows user to download individual file
 ## Usage:
 ### 1. Load the BMRBr package:
 ```{r, results='asis'}
-# Remove all the packages
-rm(list = ls(all = TRUE))
-
 library(BMRBr)
-
 ```
 
 ### 2. Download file from BMRB repo:
@@ -33,12 +29,12 @@ bmrb_download(c(965, 966, 967), "/Users/download")
 
 ### 3. Get a list/table of files that are aviailable to downoad from BMRB repo:
 
-```{r}
+```{r,eval=FALSE}
 bmrb_list = collect_ids(to_list = TRUE)
 bmrb_list[c(1:10),]
 ```
 
-```{r}
+```{r,eval=FALSE}
 bmrb_table = collect_ids(to_list = FALSE)
 bmrb_table[c(1:10),]
 ```

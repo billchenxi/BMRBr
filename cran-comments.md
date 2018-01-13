@@ -1,4 +1,5 @@
-# Jan 13, 2018
+
+# Jan 13, 2018 (Resubmission)
 ## Revised
 Resutls from previous: "Status: 2 NOTEs"
 1. (Corrected and verifed) Possibly mis-spelled words in DESCRIPTION:
@@ -12,7 +13,7 @@ Resutls from previous: "Status: 2 NOTEs"
   
 
 
-# Jan 12, 2018
+# Jan 12, 2018 (First submission)
 ## Test environments
 *
   MacOS Sierra, R 3.4.0

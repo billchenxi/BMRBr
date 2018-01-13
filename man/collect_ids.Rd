@@ -17,5 +17,5 @@
 BMRB_files. This could be a list of ids if output, if 'to_list' is set to be True, otherwise, it will return a html table.
 }
 \description{
-This function will parse all the files of bmrm nmr-star 3.1 repo and return all the avialable files that are available for downloading.
+Function will parse all the files of BMRB nmr-star 3.1 repo and return all the available files that are available for downloading.
 }

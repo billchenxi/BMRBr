@@ -1,7 +1,7 @@
 
 #' collect_ids
 #'
-#' This function will parse all the files of bmrm nmr-star 3.1 repo and return all the avialable files that are available for downloading.
+#' Function will parse all the files of BMRB nmr-star 3.1 repo and return all the available files that are available for downloading.
 #' @import xml2 rvest
 #' @param base_url (optional) The BMRB entry list page for nmr-star3.1, http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/.
 #' @param to_list (optional) whether to output as a list of ids.
