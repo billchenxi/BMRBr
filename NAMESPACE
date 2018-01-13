@@ -2,3 +2,6 @@
 
 export(bmrb_download)
 export(collect_ids)
+import(rvest)
+import(utils)
+import(xml2)

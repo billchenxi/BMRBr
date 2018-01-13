@@ -1,13 +1,11 @@
 #' bmrb_download
 #'
 #' Main function that download the BMRB file from www.bmrb.wisc.edu repo. It will downoad file in nmr-star3.1 format.
-#'
+#' @import utils
 #' @param id_list  (Required) A list of file ids that are corresponding to the requested files.
 #' @param output_dir (Required) Location were downloaded file will be saved.
 #' @param base_url Default location is http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/.
 #' @param verbose Boolean parameter. If setted to be "True", the downloader will output detailed results in the console.
-#'
-#'
 #' @return Save file in the output_dir location
 #' @export bmrb_download
 
@@ -24,17 +22,23 @@ bmrb_download <- function(id_list, output_dir, base_url = "http://www.bmrb.wisc.
                 file_url = paste0(base_url, "/", prefix, bmrb_id, ".", extension)
                 file_name = paste0(output_dir, "/", prefix, bmrb_id, ".", extension)
                 if (file.exists(file_name)) {
-                        cat(paste0("Skipping: ", prefix, bmrb_id, " already exists.\n"))
-                        return()
+                        cat("Skipping ", prefix, bmrb_id, ", it's already exists.\n")
                 }
-                if (verbose) {
-                        cat(paste0("Processing: ", prefix, bmrb_id, "\n"))
-                }
-                tryCatch( {utils::download.file(file_url, file_name, quiet = T)},
-                          error = function(e) {
-                                  cat(paste(e, "\n"))
-                          }
+                else{
+                        tryCatch(
+                                {
+                                        if (verbose) {
+                                                cat("Processing: ", prefix, bmrb_id, "\n")
+                                        }
+                                        utils::download.file(file_url, file_name, quiet = T)
+                                        cat("Downloaded: ", prefix, bmrb_id, "\n")
+                                },
+
+                                error = function(e) {
+                                          cat(e, "\n")
+                                }
                           )
+                }
 
         }
 
