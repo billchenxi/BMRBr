@@ -2,9 +2,11 @@ Package: BMRBr
 Type: Package
 Title: BMRB File Downloader
 Version: 0.1.0
-Author: person("Xi", "Chen", email = "billchenxi@gmail.com",role = c("aut", "cre"))
-Maintainer: Xi Chen <billchenxi@gmail.com>
+Author: person("Xi", "Chen", email = "billchenxi@gmail.com",role = c("aut", "cre"), comment = c(ORCID="0000-0001-7094-6748"))
+Maintainer: Bill <billchenxi@gmail.com>
 Description: R package that allow user to download individual BMRB data file from the BMRB database repo. It simplified NMR data anaylsis by combine data downloading and analysis together. 
+URL: https://github.com/billchenxi/BMRBr
+BugReports: https://github.com/billchenxi/BMRBr/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

@@ -84,47 +84,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="download-file-from-bmrb-repo" class="section level3">
 <h3>2. Download file from BMRB repo:</h3>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmrb_download</span>(<span class="dv">965</span>, <span class="st">&quot;/Users/download&quot;</span>)</code></pre></div>
-<pre><code>## Warning in dir.create(file.path(output_dir)): cannot create dir '/Users/
-## download', reason 'Permission denied'</code></pre>
-<pre><code>## Downloading...
-## Processing:  bmr 965</code></pre>
-<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
-## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr965.str:
-## cannot open destfile '/Users/download/bmr965.str', reason 'No such file or
-## directory'</code></pre>
-<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): download
-## had nonzero exit status</code></pre>
-<pre><code>## Downloaded:  bmr 965</code></pre>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">bmrb_download</span>(<span class="kw">c</span>(<span class="dv">965</span>, <span class="dv">966</span>, <span class="dv">967</span>), <span class="st">&quot;/Users/download&quot;</span>)</code></pre></div>
-<pre><code>## Warning in dir.create(file.path(output_dir)): cannot create dir '/Users/
-## download', reason 'Permission denied'</code></pre>
-<pre><code>## Downloading...
-## Processing:  bmr 965</code></pre>
-<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
-## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr965.str:
-## cannot open destfile '/Users/download/bmr965.str', reason 'No such file or
-## directory'</code></pre>
-<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): download
-## had nonzero exit status</code></pre>
-<pre><code>## Downloaded:  bmr 965 
-## Processing:  bmr 966</code></pre>
-<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
-## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr966.str:
-## cannot open destfile '/Users/download/bmr966.str', reason 'No such file or
-## directory'
-
-## Warning in utils::download.file(file_url, file_name, quiet = T): download
-## had nonzero exit status</code></pre>
-<pre><code>## Downloaded:  bmr 966 
-## Processing:  bmr 967</code></pre>
-<pre><code>## Warning in utils::download.file(file_url, file_name, quiet = T): URL
-## http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/bmr967.str:
-## cannot open destfile '/Users/download/bmr967.str', reason 'No such file or
-## directory'
-
-## Warning in utils::download.file(file_url, file_name, quiet = T): download
-## had nonzero exit status</code></pre>
-<pre><code>## Downloaded:  bmr 967</code></pre>
 </div>
 <div id="get-a-listtable-of-files-that-are-aviailable-to-downoad-from-bmrb-repo" class="section level3">
 <h3>3. Get a list/table of files that are aviailable to downoad from BMRB repo:</h3>

@@ -18,11 +18,11 @@ library(BMRBr)
 ```
 
 ### 2. Download file from BMRB repo:
-```{r}
+```{r,eval=FALSE}
 bmrb_download(965, "/Users/download")
 ```
 
-```{r}
+```{r,eval=FALSE}
 bmrb_download(c(965, 966, 967), "/Users/download")
 ```
 
