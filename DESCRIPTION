@@ -12,7 +12,6 @@ Description: Nuclear magnetic resonance (NMR) is a highly versatile analytical t
         data, for example, the metadata. Here, BMRB File Downloader (BMRBr) offers a more fundamental, low level downloader, which will 
         download original deposited .str format file. This type of file contains information such as entry title, authors, citation, protein
         sequences, and so on.
-        
         Many factors affect NMR, such as temperature, resonance sensitivity and etc., approximately 40% of the entries in the BMRB have 
         chemical shift accuracy problems[1,2] Unfortunately, current reference correction methods are heavily dependent on the avilibility of
         assigned protein chemical shifts or protein structure. This is my current research project is going to solve, which will be included
@@ -21,7 +20,6 @@ Description: Nuclear magnetic resonance (NMR) is a highly versatile analytical t
         * To simplifies NMR researches by combine data downloading and results analysis together.
         * To allows NMR data reaches a broader audience that could utilize more than just chemical shifts but also metadata.
         * To offer reference corrected data for entries without assignment or structure infomation (future release).
-        
         Reference:
         [1] E.L. Ulrich, H. Akutsu, J.F. Doreleijers, Y. Harano, Y.E. Ioannidis, J. Lin, et al., BioMagResBank, Nucl. Acids Res. 36 (2008) D402–8. doi:10.1093/nar/gkm957.
         [2] L. Wang, H.R. Eghbalnia, A. Bahrami, J.L. Markley, Linear analysis of carbon-13 chemical shift differences and its application to the detection and correction of errors in referencing and spin system identifications, J. Biomol. NMR. 32 (2005) 13–22. doi:10.1007/s10858-005-1717-0.
