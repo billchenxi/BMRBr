@@ -7,12 +7,16 @@
 #' @param base_url Default location is http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/.
 #' @param verbose Boolean parameter. If set to be "True", the downloader will output detailed results in the console.
 #' @return Save file in the output_dir location
+#' @examples
+#' download_dir = tempdir()
+#' bmrb_download(965, download_dir)
 #' @export bmrb_download
 
 
 
 
-bmrb_download <- function(id_list, output_dir, base_url = "http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1", verbose=T) {
+
+bmrb_download <- function(id_list, output_dir, base_url = "http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1", verbose=TRUE) {
         prefix <- "bmr"
         extension <- "str"
         if(!dir.exists(file.path(output_dir))) {dir.create(file.path(output_dir))}
@@ -30,7 +34,7 @@ bmrb_download <- function(id_list, output_dir, base_url = "http://www.bmrb.wisc.
                                         if (verbose) {
                                                 print("Processing: ", prefix, bmrb_id)
                                         }
-                                        utils::download.file(file_url, file_name, quiet = T)
+                                        utils::download.file(file_url, file_name, quiet = TRUE)
                                         print("Downloaded: ", prefix, bmrb_id)
                                 },
 

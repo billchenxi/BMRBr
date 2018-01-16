@@ -6,7 +6,7 @@
 \usage{
 bmrb_download(id_list, output_dir,
   base_url = "http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1",
-  verbose = T)
+  verbose = TRUE)
 }
 \arguments{
 \item{id_list}{(Required) A list of file ids that are corresponding to the requested files.}
@@ -22,4 +22,8 @@ Save file in the output_dir location
 }
 \description{
 Main function that download the BMRB file from www.bmrb.wisc.edu repo. It will download file in nmr-star3.1 format.
+}
+\examples{
+download_dir = tempdir()
+bmrb_download(965, download_dir)
 }
