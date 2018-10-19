@@ -1,7 +1,7 @@
 Package: BMRBr
 Type: Package
 Title: 'BMRB' File Downloader
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Xi", "Chen", email=c("billchenxi@gmail.com", "billchenxi@uky.edu"), role = c("aut", "cre"), comment = c(ORCID = "0000-0001-7094-6748"))
 Description: Nuclear magnetic resonance (NMR) is a highly versatile analytical technique for studying molecular configuration, conformation, 
         and dynamics, especially those of biomacromolecules such as proteins. Biological Magnetic Resonance Data Bank ('BMRB') is a repository
@@ -27,7 +27,7 @@ BugReports: https://github.com/billchenxi/BMRBr/issues
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 Depends: R (>= 3.1.0), xml2, rvest, utils
 Suggests: knitr, rmarkdown, testthat
 VignetteBuilder: knitr

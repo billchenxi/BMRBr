@@ -11,7 +11,7 @@
 #' @export collect_ids
 
 collect_ids <- function(base_url="http://www.bmrb.wisc.edu/ftp/pub/bmrb/entry_lists/nmr-star3.1/", to_list = FALSE) {
-        cat("Parsing data, it might take a while ...\n")
+        print("Parsing data, it might take a while ...\n")
         webpage<- xml2::read_html(base_url)
         table <-rvest::html_nodes(webpage, "table")
         table <- rvest::html_table(table, fill = TRUE)[[1]]
