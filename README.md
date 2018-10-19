@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/billchenxi/BMRBr.svg?branch=master)](https://travis-ci.org/billchenxi/BMRBr)
+
 # BMRBr Package
 Author: Xi Chen
 Email: billchenxi@gmail.com
