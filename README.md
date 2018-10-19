@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/billchenxi/BMRBr.svg?branch=master)](https://travis-ci.org/billchenxi/BMRBr)
+[![codecov](https://codecov.io/gh/billchenxi/BMRBr/branch/master/graph/badge.svg)](https://codecov.io/gh/billchenxi/BMRBr)
 [![](https://www.r-pkg.org/badges/version/BMRBr)](https://CRAN.R-project.org/package=BMRBr)
 [![](https://cranlogs.r-pkg.org/badges/BMRBr)](https://cran.r-project.org/package=BMRBr)
 [![DOI](https://zenodo.org/badge/117279208.svg)](https://zenodo.org/badge/latestdoi/117279208)
