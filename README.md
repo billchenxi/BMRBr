@@ -1,4 +1,7 @@
 [![Build Status](https://travis-ci.org/billchenxi/BMRBr.svg?branch=master)](https://travis-ci.org/billchenxi/BMRBr)
+[![](https://www.r-pkg.org/badges/version/BMRBr)](https://CRAN.R-project.org/package=BMRBr)
+[![](https://cranlogs.r-pkg.org/badges/BMRBr)](https://cran.r-project.org/package=BMRBr)
+[![DOI](https://zenodo.org/badge/117279208.svg)](https://zenodo.org/badge/latestdoi/117279208)
 
 # BMRBr Package
 Author: Xi Chen
