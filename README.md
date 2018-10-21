@@ -3,10 +3,12 @@
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/billchenxi/BMRBr?branch=master&svg=true)](https://ci.appveyor.com/project/billchenxi/BMRBr)
 [![codecov](https://codecov.io/gh/billchenxi/BMRBr/branch/master/graph/badge.svg)](https://codecov.io/gh/billchenxi/BMRBr)
 [![DOI](https://zenodo.org/badge/117279208.svg)](https://zenodo.org/badge/latestdoi/117279208)
-![RStudio CRAN mirror downloads](https://www.r-pkg.org/badges/grand-total/BMRBr)
-![RStudio CRAN mirror downloads](https://www.r-pkg.org/badges/last-month/BMRBr)
-![RStudio CRAN mirror downloads](https://www.r-pkg.org/badges/last-week/BMRBr)
-![RStudio CRAN mirror downloads](https://www.r-pkg.org/badges/last-day/BMRBr)
+
+[![](https://cranlogs.r-pkg.org/badges/grand-total/BMRBr)](https://cran.r-project.org/package=BMRBr)
+[![](https://cranlogs.r-pkg.org/badges/last-month/BMRBr)](https://cran.r-project.org/package=BMRBr)
+[![](https://cranlogs.r-pkg.org/badges/last-week/BMRBr)](https://cran.r-project.org/package=BMRBr)
+[![](https://cranlogs.r-pkg.org/badges/last-day/BMRBr)](https://cran.r-project.org/package=BMRBr)
+
 
 # BMRBr Package
 Author: Xi Chen
