@@ -1,3 +1,4 @@
+[![CRAN](https://img.shields.io/cran/l/devtools.svg)](https://cran.r-project.org/web/packages/BMRBr)
 [![Build Status](https://travis-ci.org/billchenxi/BMRBr.svg?branch=master)](https://travis-ci.org/billchenxi/BMRBr)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/billchenxi/BMRBr?branch=master&svg=true)](https://ci.appveyor.com/project/billchenxi/BMRBr)
 [![codecov](https://codecov.io/gh/billchenxi/BMRBr/branch/master/graph/badge.svg)](https://codecov.io/gh/billchenxi/BMRBr)
