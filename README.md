@@ -11,11 +11,12 @@
 
 
 # BMRBr Package
-Author: Xi Chen
-Email: billchenxi@gmail.com
-Date: Jan 12, 2018
-GitHub: github.com/billchenxi
-Website: https://billchenxi.github.io/
+* Author: Xi Chen
+* Email: billchenxi@gmail.com
+* Date: Jan 12, 2018
+* GitHub: github.com/billchenxi
+* CRAN: https://cran.r-project.org/web/packages/BMRBr/index.html
+* Website: https://billchenxi.github.io/
 
 ## Welcome! 
 BMRBr is a package that facilites R users to analyze data from BMRB data repo by simplifing the download procedure. Currently, the only way to download individual BMRB NMR-star file is to download manually or using shell code, this package frees R users by allowing users to enter only ID and store location.
